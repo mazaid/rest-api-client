@@ -43,6 +43,27 @@ class CheckTasks extends ApiAbstract {
 
     }
 
+    getLatestByCheckId(checkIds, fields) {
+
+        return new Promise((resolve, reject) => {
+
+            var query = {checkId: checkIds, latest: true};
+
+            if (fields) {
+                query.fields = fields;
+            }
+
+            this._client.get(`${this._base}/CheckTasks`, query)
+                .then((body) => {
+                    resolve(_.get(body, 'result', []));
+                })
+                .catch((error) => {
+                    reject(this._processError(error));
+                });
+        });
+
+    }
+
     getById(id) {
 
         return new Promise((resolve, reject) => {
