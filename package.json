@@ -1,6 +1,6 @@
 {
   "name": "mazaid-rest-api-clients",
-  "version": "0.1.2",
+  "version": "0.1.3",
   "description": "rest api clients",
   "main": "index.js",
   "scripts": {
