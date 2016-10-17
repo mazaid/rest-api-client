@@ -29,7 +29,6 @@
   },
   "homepage": "https://github.com/mazaid/rest-checks#readme",
   "dependencies": {
-    "maf": "^0.4.4",
     "mazaid-error": "^0.3.1"
   },
   "devDependencies": {
