@@ -49,6 +49,8 @@ class CheckTasks extends ApiAbstract {
 
             var query = {checkId: checkIds, latest: true};
 
+            query.limit = checkIds.length;
+
             if (fields) {
                 query.fields = fields;
             }
