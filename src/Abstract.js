@@ -1,11 +1,11 @@
 'use strict';
 
-var createError =  require('mazaid-error');
+var createError = require('mazaid-error');
 var parseError = require('mazaid-error/parse');
 
 class Abstract {
 
-    _processError(error) {
+    _processError (error) {
         if (error.checkable) {
             return createError(error.message, error.code).setEntity(error.entity).setList(error.list);
         }

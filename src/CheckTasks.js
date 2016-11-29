@@ -15,7 +15,7 @@ class CheckTasks extends ApiAbstract {
         this._client = client;
     }
 
-    create(data) {
+    create (data) {
 
         return new Promise((resolve, reject) => {
             this._client.post(`${this._base}/checkTasks`, data)
@@ -29,7 +29,7 @@ class CheckTasks extends ApiAbstract {
 
     }
 
-    getLastByCheckId(checkId) {
+    getLastByCheckId (checkId) {
 
         return new Promise((resolve, reject) => {
             this._client.get(`${this._base}/checkTasks`, {checkId: checkId, limit: 1})
@@ -43,7 +43,7 @@ class CheckTasks extends ApiAbstract {
 
     }
 
-    getLatestByCheckId(checkIds, fields) {
+    getLatestByCheckId (checkIds, fields) {
 
         return new Promise((resolve, reject) => {
 
@@ -66,7 +66,7 @@ class CheckTasks extends ApiAbstract {
 
     }
 
-    getById(id) {
+    getById (id) {
 
         return new Promise((resolve, reject) => {
             this._client.get(`${this._base}/checkTasks/${id}`)

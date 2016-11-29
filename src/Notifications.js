@@ -13,7 +13,7 @@ class Notifications extends ApiAbstract {
         this._client = client;
     }
 
-    send(checkId, message) {
+    send (checkId, message) {
 
         return new Promise((resolve, reject) => {
             var data = {

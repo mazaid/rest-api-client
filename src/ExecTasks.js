@@ -14,7 +14,7 @@ class ExecTasks extends ApiAbstract {
         this._client = client;
     }
 
-    create(data) {
+    create (data) {
 
         return new Promise((resolve, reject) => {
             this._client.post(`${this._base}/execTasks`, data)
@@ -28,7 +28,7 @@ class ExecTasks extends ApiAbstract {
 
     }
 
-    getById(id) {
+    getById (id) {
 
         return new Promise((resolve, reject) => {
             this._client.get(`${this._base}/execTasks/${id}`)

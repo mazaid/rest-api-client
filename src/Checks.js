@@ -13,7 +13,7 @@ class Checks extends ApiAbstract {
         this._client = client;
     }
 
-    getById(id, fields, options) {
+    getById (id, fields, options) {
 
         return new Promise((resolve, reject) => {
             this._client.get(`${this._base}/checks/byId/${id}`, {fields: fields}, options)
