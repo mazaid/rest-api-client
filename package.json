@@ -4,6 +4,7 @@
   "description": "rest api clients",
   "main": "index.js",
   "scripts": {
+    "clean": "rm -rf package",
     "build": "node ./build.js",
     "docs:open": "npm run docs && open ./esdoc/index.html",
     "docs": "rm -rf ./esdoc && ./node_modules/.bin/esdoc ./ -c ./.esdoc.json",
